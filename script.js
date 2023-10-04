@@ -13,7 +13,7 @@ document.getElementById("ageForm").addEventListener("submit", function (e) {
             const name = nameInput.value.trim();
 
             if (isNaN(age) || age <= 0 || name === "") {
-                alert("Please enter valid age and name.");
+                alert("inputs cannot be empty");
                 return;
             }
 
