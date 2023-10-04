@@ -12,10 +12,7 @@ document.getElementById("ageForm").addEventListener("submit", function (e) {
             const age = parseInt(ageInput.value, 10);
             const name = nameInput.value.trim();
 
-            if (isNaN(age) || age <= 0 || name === "") {
-                alert("inputs cannot be empty");
-                return;
-            }
+            
 
             const promise = new Promise((resolve, reject) => {
                 setTimeout(() => {
